@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+  --DarkCyan: #3c8067;
+  --Cream: #f2ebe3; 
+  --DarkBlue: #1c232b;
+  --DarkGrayishBlue: #6c7289;
+  --White: #ffffff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100dvh;
+  font-size: 14px;
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 12px;
+  transition: all 0.4s linear;
+}
+
+img:hover {
+  transition: all 0.4s linear;
+  border: 1px solid var(--DarkCyan);
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  max-width: 600px;
+  display: flex;
+  gap: 2rem;
+  background-color: #FFF;
+  border-radius: 15px;
+}
+
+.perfume {
+  font-size: 17px;
+  color: var(--DarkGrayishBlue);
+  padding-top: 10px;
+}
+
+h1 {
+  padding-top: 2rem;
+  font-family: "Fraunces", serif;
+}
+
+.text {
+  font-family: "Fraunces", serif;
+  padding-top: 2rem;
+  color: var(--DarkGrayishBlue);
+}
+
+.prices {
+  font-family: "Fraunces", serif;
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.new_price {
+  font-size: 1.2rem;
+  color: var(--DarkCyan);
+  font-weight: 700;
+}
+
+.old_price {
+  text-decoration: line-through;
+  font-weight: 700;
+  color: var(--DarkGrayishBlue);
+}
+
+button {
+  border: none;
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 7px;
+  width: calc(100% - 2rem);
+  cursor: pointer;
+  background-color: var(--DarkCyan);
+  color: var(--White);
+  font-size: 20px;
+  font-family: "Fraunces", serif;
+}
