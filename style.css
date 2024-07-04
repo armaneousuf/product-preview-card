@@ -27,7 +27,9 @@ img {
   border-bottom-left-radius: 12px;
   transition: all 0.4s linear;
 }
-
+.img :nth-child(2) {
+  display: none;
+}
 img:hover {
   transition: all 0.4s linear;
   border: 1px solid var(--DarkCyan);
@@ -99,4 +101,37 @@ button {
   color: var(--White);
   font-size: 20px;
   font-family: "Fraunces", serif;
+}
+
+@media screen and (max-width: 600px) {
+
+  .img :nth-child(1) {
+    display: none;
+  }
+
+  .img :nth-child(2) {
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .card_content {
+    padding: 20px;
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+   button {
+    width: 100%;
+    padding: 5px;
+   }
 }
